@@ -36,7 +36,7 @@ public class Program {
 			soma += produto[i].getPreco();
 		}
 		
-		double media = soma/n;		//Média receber soma dividido por n produtos
+		double media = soma/produto.length;		//Média receber soma dividido por n produtos
 		
 		System.out.println("\nA média do preço é: " + media);
 		
