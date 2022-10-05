@@ -19,7 +19,7 @@ public class Program {
 		//Linha abaixo: instanciando um produto a partir de n produtos
 		Produto [] produto = new Produto[n];	
 		
-		for(int i=0; i<n; i++) {
+		for(int i=0; i<produto.length; i++) {
 			scan.nextLine();
 			
 			System.out.print("\nQual nome do produto? ");
@@ -32,13 +32,13 @@ public class Program {
 		}
 		
 		double soma = 0.0;
-		for(int i=0; i<n; i++) {
+		for(int i=0; i<produto.length; i++) {
 			soma += produto[i].getPreco();
 		}
 		
 		double media = soma/n;		//Média receber soma dividido por n produtos
 		
-		System.out.println("A média do preço é: " + media);
+		System.out.println("\nA média do preço é: " + media);
 		
 		scan.close();
 	}
